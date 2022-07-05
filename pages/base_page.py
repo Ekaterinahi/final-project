@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators
 
+
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
@@ -14,7 +15,6 @@ class BasePage():
 
     def open(self):   # открываet нужную страницу в браузере, используя метод get().
         self.browser.get(self.url)  #реализация метода
-
 
     def solve_quiz_and_get_code(self):
         alert = self.browser.switch_to.alert
