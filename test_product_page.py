@@ -10,8 +10,8 @@ class TestUserAddToBasketFromProductPage():
     @pytest.fixture(autouse=True)
     def setup(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
-        email = str(time.time()) + "@katemail.org"
-        password = "426244123ABhdic"
+        email = str(time.time()) + "@fakemail.org"
+        password = "426244123ABCdefhg"
         product_page = ProductPage(browser, link)
         product_page.open()
         product_page.go_to_login_page()
